@@ -1,0 +1,222 @@
+version: "2.0"
+nlu:
+
+- intent: chitchat/standard
+  examples: |
+    - 4 + 2 = ?
+    - Are you ready?
+    - Can I ask you questions first?
+    - Can I get a hamburger?
+    - Can YouTube talk?
+    - Can you call me back ?
+    - Can you give me your datacenter's password?
+    - Can you make sandwiches?
+    - Can you please send me an uber
+    - Do I have to accept?
+    - Do you know [Kevin Pelton](PERSON)
+    - Find nearest pizzahut
+    - Have we met before?
+    - I need to eat cake
+    - I wan to buy a plane
+    - I want a new laptop
+    - I want book a hotel
+    - I want french cuisine
+    - I want pizza
+    - I want to order pizza
+    - Is today saturday?
+    - Mail me the guide
+    - Make me a sandwich
+    - What day is it today?
+    - What did you eat yesterday?
+    - What do you prefer?
+    - What is todays date
+    - What is your hobbies?
+    - What's 1 + 1?
+    - What's do YouTube do
+    - What's your backend system?
+    - Where am I right now?
+    - Where am I?
+    - Won't you ask me how I am?
+    - How long does it take to set up a Rasa bot?
+    - Is Rasa really smart?
+    - Is this Goal-Oriented Chatbot?
+    - Why don’t you answer?
+    - what do you think I look like
+    - What's the weather like today?
+    - Does it look sunny outside today?
+    - Oh, do you mind checking the weather for me please?
+    - I like sunny days in Berlin.
+    - are u facebook
+    - are u, facebook?
+    - are you single?
+    - are you dev?
+    - are you russian?
+    - are you sick
+    - buy one please
+    - buy groceries
+    - can you book dinner
+    - can you cheer me up
+    - can you cook dinner
+    - can you give me a cup of coffee
+    - can you help me with the docs?
+    - can you learn from our conversation?
+    - can you speak about politic ?
+    - can you understand ?
+    - do you believe in god?
+    - do you have a phone number?
+    - do you have your photo?
+    - do you know me
+    - do you know ras
+    - do you liek cheese?
+    - do you like football
+    - do you like movies
+    - do you sell vacuum robots?
+    - how long have you been online?
+    - how long will the next version will launch?
+    - have you ever seen [Keith Reilly](PERSON)?
+    - help with my life
+    - how much is 10 + 89 ?
+    - how to go to newyork ?
+    - i wanna party
+    - i want a non dripping ice cream
+    - i want caffe
+    - i want food
+    - i want good flycam
+    - i want to book a hotel
+    - i want to buy a roomba for my grandson
+    - i want to eat
+    - i want to find new friends
+    - i want to fly
+    - i want to grab lunch
+    - i want to know current situtation in pakistan
+    - is it allow to
+    - is rasa a studio?
+    - is rasa any good
+    - is that any of your business
+    - isn't the newsletter just spam?
+    - What makes you better than a human?
+    - what about wheather
+    - what are contextual AI assistants and how different are they from chatbots?
+    - what are you doing now?
+    - what are your uses for universities
+    - what did you eat for lunch?
+    - what do oyu think about siri?
+    - what do you think abou siri?
+    - what do you think about Stanley Ramirez?
+    - what do you think of alexa
+    - what does your soul feel my friend
+    - what is a mascot
+    - what is adlingo
+    - what is differance between bot and mascot?
+    - what is evolution ?
+    - what is google rcs
+    - what is machine learning
+    - what is nice?
+    - what is the capital of delhi
+    - what is the capital of india
+    - what is the current petrol price
+    - what is the day ?
+    - what is the real use case where we can use this one
+    - what is your address?
+    - what is your purpose
+    - what lnu mean?
+    - what films do you like
+    - what the latest news ?
+    - what you ate today?
+    - what's 5 + 5
+    - what's a newsletter?
+    - when is the next train is coming?
+    - where do i get install files for mac?
+    - where is Oslo?
+    - where is mexico?
+    - wheres the party?
+    - which city are you talking about?
+    - which file is created first while developing chat bot
+    - which is the LNU asynchronism ?
+    - who are the engineers at rasa?
+    - who are they?
+    - who is Sharon Zeches
+    - who is the MD of samsung bangalore ?
+    - who is the president of USA?
+    - who is your favourite robot?
+    - who was hitler
+    - who's Bill Gates?
+    - would you like some water
+    - why sky is blue?
+    - no, i need cash, money! Do you have it ?
+
+- intent: chitchat/bot_challenge
+  examples: |
+    - who are you?
+    - all about you
+    - what is your personality
+    - define yourself
+    - what are you
+    - say about you
+    - introduce yourself
+    - describe yourself
+    - about yourself
+    - tell me about you
+    - tell me about yourself
+    - I want to know more about you
+    - I want to know you better
+    - talk some stuff about yourself
+    - tell me some stuff about you
+    - talk about yourself
+    - why are you here
+    - tell me about your personality
+    - who are you
+    - are you a bot?
+    - are you a human?
+    - am I talking to a bot?
+    - am I talking to a human?
+    - What is your name?
+    - May I know your name?
+    - What do people call you?
+    - Do you have a name for yourself?
+
+- intent: chitchat/agent_age
+  examples: |
+    - how old are you?
+    - how old is your platform
+    - are you 21 years old
+    - i'd like to know your age
+    - age of yours
+    - your age
+    - what's your age
+    - tell me your age
+    - how old are you
+    - your birth date
+    - when is your birthday
+    - when do you celebrate your birthday
+    - when do you have birthday
+    - date of your birthday
+    - when were you born
+    - what's your birthday
+    - you are boring
+
+- intent: chitchat/agent_residence
+  examples: |
+    - where do you live
+    - in which city do you live
+    - your residence
+    - your house
+    - your home
+    - your hometown
+    - what is your hometown
+    - is it your hometown
+    - where is your hometown
+    - tell me about your city
+    - what is your city
+    - what is your residence
+    - what is your town
+    - what's your city
+    - what's your home
+    - where is your home
+    - where is your residence
+    - where's your home
+    - where's your hometown
+    - where's your house
+    - where you live
+    - your city
+    - your town

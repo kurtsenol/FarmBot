@@ -1,0 +1,63 @@
+version: "2.0"
+stories:
+
+- story: new story1
+  steps:
+  - intent: greet
+  - action: utter_how_can_I_help
+  - intent: express_complaint
+  - action: form_complaint
+  - active_loop: form_complaint
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_create_complaint
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: new story2
+  steps:
+  - intent: express_complaint
+  - action: form_complaint
+  - active_loop: form_complaint
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: action_create_complaint
+  - intent: thank
+  - action: utter_thank
+  - intent: goodbye
+  - action: utter_goodbye
+
+
+- story: form interrupted + quit_form
+  steps:
+  - intent: express_complaint
+  - action: form_complaint
+  - active_loop: form_complaint
+  - intent: quit_form
+  - action: utter_ask_quit
+  - intent: affirm
+  - action: action_deactivate_loop
+  - active_loop: null
+  - action: action_slot_reset
+  - slot_was_set:
+    - requested_slot: null
+
+- story: form interrupted + continue 
+  steps:
+  - intent: express_complaint
+  - action: form_complaint
+  - active_loop: form_complaint
+  - intent: quit_form
+  - action: utter_ask_quit
+  - intent: deny
+  - action: form_complaint
+  - active_loop: null
+  - action: action_create_complaint
+  - intent: goodbye
+  - action: utter_goodbye
+

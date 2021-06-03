@@ -1,0 +1,28 @@
+version: "2.0"
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hey
+    - hello
+    - good morning
+    - how are you
+    - hola
+    - good evening
+    - whats up
+    - whatsup
+    - sup
+    - Hola
+    - Hi bot
+    - Hey bot
+    - Good morning
+    - hi again
+    - hi folks
+    - hi Mister
+    - hi pal!
+    - hi there
+    - greetings
+    - hello everybody
+    - hello is anybody there
+    - hello robot
+    - erw

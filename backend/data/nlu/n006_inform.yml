@@ -1,0 +1,58 @@
+version: "2.0"
+nlu:
+- intent: inform
+  examples: |
+    - [Task48](1task_name)
+    - [Task 770](1task_name)
+    - [Task153](1task_name)
+    - [Alpha](project_name)
+    - [Beta](project_name)
+    - 48
+    - 24
+    - 12
+    - 112
+    - twenty
+    - fourty
+    - ten
+    - fifty eight
+    - related work is [Task154](1task_name)
+    - [Thomas Adams](PERSON)
+    - [Thomas](PERSON)
+    - [Varesh Swati](PERSON)
+    - [Samir Sljivo](PERSON)
+    - [Diana Perez](PERSON)
+    - [Karl Owens](PERSON)
+    - [Matthew Reed](PERSON)
+    - [Thomas Douglas](PERSON)
+    - [Parmesh Khan](PERSON)
+    - [Richard McCarter](PERSON)
+    - [Frank Cook](PERSON)
+    - [Diana Perez](PERSON)
+    - [Diana](PERSON)
+    - [Richard](PERSON)
+    - [Kelly](PERSON)
+    - data_sync(project_name)
+    - Navigation(project_name)
+    - nothing
+    - [software developer](role)
+    - [qa tester](role)
+    - [business analyst](role)
+    - skills
+    - there is COVID-19
+    - the schedule is tight 
+    - there may be budget problem
+    - two hundred
+    - eighty
+    - High
+    - Low
+    - Medium
+    - At risk
+    - Complete
+    - Active
+    - New
+    - first list
+    - second list
+    - save and continue
+    - cancel last edit
+    - cancel all edits
+    - submit saved edits

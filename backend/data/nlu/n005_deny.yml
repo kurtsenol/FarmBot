@@ -1,0 +1,23 @@
+version: "2.0"
+nlu:
+- intent: deny
+  examples: |
+    - no
+    - not at all
+    - nope
+    - definitely not
+    - never
+    - absolutely not
+    - i don't think so
+    - i'm afraid not
+    - no sir
+    - no ma'am
+    - no way
+    - no sorry
+    - No, not really.
+    - nah not for me
+    - nah
+    - no and no again
+    - no go
+    - deny
+    - denied

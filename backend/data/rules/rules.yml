@@ -1,0 +1,31 @@
+version: "2.0"
+rules:
+- rule: Rule to handle messages with low NLU confidence (automated conversion from 'FallbackPolicy')
+  steps:
+  - intent: nlu_fallback
+  - action: utter_ask_rephrase
+
+- rule: out of scope
+  steps:
+  - intent: out_of_scope
+  - action: utter_ask_rephrase
+
+- rule: welcome user
+  conversation_start: true  # this rule only applies at the beginning of a conversation
+  steps:
+    - intent: get_started
+    - action: utter_get_started
+    
+- rule: respond to chitchat
+  steps:
+  - intent: chitchat
+  - action: utter_chitchat 
+
+- rule: quit form
+  condition:
+  - active_loop: form_complaint 
+  steps:
+  - intent: quit_form
+  - action: utter_ask_quit
+  
+

@@ -1,0 +1,22 @@
+version: "2.0"
+nlu:
+- intent: goodbye
+  examples: |
+    - goodbye
+    - ciao
+    - c u around
+    - bye
+    - c ya
+    - c u
+    - talk to you later
+    - see you around
+    - Bye bot
+    - Goodbye friend
+    - bye for now
+    - catch you later
+    - gotta go
+    - See you
+    - goodnight
+    - have a nice day
+    - i'm off
+    - we'll speak soon

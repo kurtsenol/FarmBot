@@ -1,0 +1,23 @@
+version: "2.0"
+nlu:
+- intent: quit_form
+  examples: |
+    - Stop
+    - Quit
+    - Exit
+    - stop
+    - quit
+    - exit
+    - that's not what i want
+    - ok, but that doesnt help me
+    - stop go back
+    - I want to quit
+    - I wanna quit 
+    - stop this
+    - I dont want to fill in a form
+    - stop form
+    - quit form
+    - exit this 
+    - quit this
+
+ 

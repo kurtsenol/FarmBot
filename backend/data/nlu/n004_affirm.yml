@@ -1,0 +1,18 @@
+version: "2.0"
+nlu:
+- intent: affirm
+  examples: |
+    - ok
+    - o.k.
+    - I accept
+    - I agree
+    - yes
+    - indeed
+    - of course
+    - that sounds good
+    - correct
+    - sure
+    - yep
+    - definitely
+    - for sure
+    - great

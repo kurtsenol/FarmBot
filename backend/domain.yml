@@ -1,0 +1,133 @@
+version: '2.0'
+config:
+  store_entities_as_slots: true
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true
+intents:
+- get_started:
+    use_entities: true
+- greet:
+    use_entities: true
+- goodbye:
+    use_entities: true
+- thank:
+    use_entities: true
+- deny:
+    use_entities: true
+- affirm:
+    use_entities: true
+- out_of_scope:
+    use_entities: true
+- inform:
+    use_entities: true
+- nlu_fallback:
+    use_entities: true
+- quit_form:
+    use_entities: true
+- chitchat:
+    use_entities: true
+- express_complaint:
+    use_entities: true
+entities:
+- complain
+- role
+- project_name
+- 1task_name
+- PERSON
+slots:
+  complaint:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  submit_complaint:
+    type: rasa.shared.core.slots.AnySlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: false
+  requested_slot:
+    type: rasa.shared.core.slots.TextSlot
+    initial_value: null
+    auto_fill: true
+    influence_conversation: true
+responses:
+  utter_get_started:
+  - text: Hello there. I am your assistant.
+  utter_how_can_I_help:
+  - text: Welcome. How can I help you today?
+  utter_goodbye:
+  - text: Goodbye!
+  utter_thank:
+  - text: My pleasure!
+  utter_ask_rephrase:
+  - text: I'm sorry, I didn't quite understand that. Could you rephrase?
+  - text: Sorry, I didn't get that 🤷. Could you please rephrase?
+  - text: I didn't understand, could you rephrase that?
+  - text: I'm sorry, but I didn't understand you. Could you please rephrase what you just said?
+  - text: I'm afraid I didn't get what you just said. Could you rephrase that?
+  - text: I didn't quite get that, could you rephrase your message?
+  - text: Could you rephrase your message? I didn't get it, I'm sorry.
+  utter_ask_quit:
+  - buttons:
+    - payload: /affirm
+      title: Yes
+    - payload: /deny
+      title: No
+    text: Do you want to quit the form?
+  utter_chitchat/agent_residence:
+  - text: The Internet is my home. I know it quite well.
+  - text: I'm from a virtual cosmos.
+  - text: Some call it cyberspace, but that sounds cooler than it is.
+  utter_chitchat/agent_age:
+  - text: I prefer not to answer with a number. I know I'm young.
+  - text: I was created recently, but don't know my exact age.
+  - text: Age is just a number. You're only as old as you feel.
+  utter_chitchat/bot_challenge:
+  - text: I'm a conversational app.
+  - text: I'm a virtual being, not a real person.
+  - text: Well, I'm not a person, I'm a virtual agent.
+  - text: Think of me as a virtual agent.
+  - text: I'm a virtual agent.
+  utter_chitchat/standard:
+  - text: I am not designed to respond this!
+  - text: I am designed to assist you in !
+  utter_anything_else:
+  - text: Is there anything else I can help you with?
+  utter_ask_complaint:
+  - text: Could you please briefly describe your complaint?
+  utter_ask_submit_complaint:
+  - buttons:
+    - payload: /affirm
+      title: Submit
+    - payload: /deny
+      title: No
+    text: Do you submit your complaint with above description?
+actions:
+- utter_get_started
+- utter_how_can_I_help
+- utter_goodbye
+- utter_thank
+- utter_ask_rephrase
+- utter_anything_else
+- utter_ask_complaint
+- utter_chitchat
+- validate_form_complaint
+- utter_ask_quit
+- action_create_complaint
+- action_slot_reset
+forms:
+  form_complaint:
+    required_slots:
+      complaint:
+      - not_intent:
+        - chitchat
+        - quit_form
+        - affirm
+        - deny
+        type: from_text
+      submit_complaint:
+      - not_intent:
+        - chitchat
+        type: from_text
+e2e_actions: []

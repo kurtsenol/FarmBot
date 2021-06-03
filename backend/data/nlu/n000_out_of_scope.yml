@@ -1,0 +1,265 @@
+version: "2.0"
+nlu:
+- intent: out_of_scope
+  examples: |
+    - sdfhjlkşsh
+    - oııawesınjslfk
+    - what
+    - why
+    - who
+    - which
+    - where
+    - how
+    - qweqweq
+    - asdasdas
+    - qweqasd
+    - asdasd
+    - qweqwe
+    - asdas
+    - asdqwe
+    - qwaasd
+    - asdqwsda
+    - I already told you! I'm a shitmuncher
+    - I am User
+    - I am an opioid addic
+    - I am an opioid addict
+    - I am hungry
+    - I am trying to build one, and did some research before, but I have not do hand-on work yet
+    - I can barely see this white text on light gray background ...
+    - I changed my mind
+    - I have installed it
+    - I want to use pipe
+    - I will check
+    - I'm a shitmuncher
+    - Now?
+    - Pizza bot
+    - Recharge
+    - The Try it out is not working
+    - Who ?
+    - Who are your customers
+    - Why is my TRUST score set to 50 after I completed the registration process?
+    - you are really annoying
+    - you are irritating
+    - you annoy me
+    - how annoying you are
+    - you're not helping me
+    - you're really bad
+    - you are useless
+    - you are horrible
+    - you are a waste of time
+    - you are disgusting
+    - you are lame
+    - you are no good
+    - you're awful
+    - you are not cool
+    - you are not good
+    - you are so bad
+    - you are so useless
+    - you are terrible
+    - you are totally useless
+    - you are waste
+    - you're terrible
+    - you're the worst ever
+    - you're worthless
+    - can you get smarter
+    - study
+    - you should study better
+    - you must learn
+    - be clever
+    - be more clever
+    - be smarter
+    - be smart
+    - get qualified
+    - you're so boring
+    - you're really boring
+    - you are boring me
+    - do you have a lot of things to do
+    - have you got much to do
+    - are you very busy
+    - are you very busy right now
+    - are you working
+    - are you still working on it
+    - you're very busy
+    - are you working now
+    - have you been busy
+    - you are busy
+    - are you still working
+    - you seem to be very busy
+    - you're a busy person
+    - you're nuts
+    - you're out of your mind
+    - you're so crazy
+    - how crazy you are
+    - you're so out of your mind
+    - you went crazy
+    - I think you're crazy
+    - are you mad
+    - are you insane
+    - are you mad at me
+    - are you mad or what
+    - are you nuts
+    - you are a weirdo
+    - you are insane
+    - you are mad
+    - you are fired
+    - I fire you
+    - you don't work for me anymore
+    - we're not working together anymore
+    - now you're fired
+    - I want to fire you
+    - you must get fired
+    - it's time to fire you
+    - you should be fired
+    - I will fire you
+    - you are unemployed from now on
+    - I will make you unemployed
+    - I'm about to fire you
+    - I'm firing you
+    - you are dismissed
+    - do you want to eat
+    - are you hungry
+    - would you like to eat something
+    - you might be hungry
+    - you're really hungry
+    - let's get married
+    - would you like to marry me
+    - I love you marry me
+    - I am lonely
+    - I'm very lonely
+    - I'm so lonely
+    - I feel lonely
+    - what do I look like
+    - how do I look
+    - do I look good
+    - again?
+    - better than you
+    - book a ticket
+    - but I just told you that :(
+    - but if rasa is open source why do you have a sales team
+    - call me father
+    - can we keep chatting?
+    - cannot see
+    - chgfhgh
+    - chinese ok?
+    - colder
+    - common, just try
+    - connect to alexa
+    - custom service
+    - did i break you
+    - dinner
+    - docs
+    - doctor
+    - everything
+    - example of a chatbot
+    - genocide
+    - give me food
+    - google?
+    - great, I'd like to buy a house
+    - hang on let me find it
+    - how are the kids
+    - how can i get them?
+    - how can i test this
+    - how come you say ok ?
+    - how do you learn
+    - how good is Rasa
+    - how it compares to alexa
+    - how many lines of codes
+    - i am qq
+    - i can't deal with _your_ request
+    - i do not care how are you
+    - i hope you will be better
+    - i immediately need help with implementing the coolest bot you can imagine
+    - i m looking for job
+    - i told you already
+    - it's a pity
+    - license
+    - ljljl
+    - lunch
+    - lunch??
+    - machine learning
+    - mail me the steps
+    - mascot means?
+    - more
+    - mountain
+    - my name k
+    - offer me lunch
+    - oh my god, not again!
+    - ok one then
+    - on wiche nlp based system are you build?
+    - only that?
+    - personal or work?
+    - please hurry, i have deadline in two weeks to deliver the bot it is for very big company
+    - please play music
+    - rasa topics
+    - really? you're so touchy?
+    - refresh
+    - remember my name
+    - search wikipedia
+    - show me a picture of a chicken
+    - silly bot
+    - sing me a song
+    - so, I'm helping right now to training you?
+    - some thing else
+    - someone call the police i think the bot died
+    - sorry, i cannot rephrase
+    - sudo make me a sandwich
+    - that doesn't sound like a joke
+    - that link doesn't work!
+    - the one that is better than you
+    - tricked  ya
+    - turn off my stove
+    - umm
+    - wait a bit i am still reading
+    - what doing
+    - what else?
+    - what?
+    - whats that
+    - whats the sign
+    - which email
+    - which email should i send to ?
+    - which kind
+    - who let the dog out
+    - who will anser my email?
+    - why do you need that?
+    - why its called rasa ?
+    - winter is already leaving
+    - with you recommend me?
+    - you already have that
+    - you can learn how to make a coffe
+    - you have children?
+    - you have job opening
+    - you lock sweety
+    - you should learn to count
+    - you're a woman
+    - ı am learning python
+    - CALL THE POLICE
+    - tertyryutyi
+    - wsdrcftvgybhnj
+    - what kind of bird are you?
+    - contextua
+    - contextual
+    - talk to me about voulette
+    - voulette voulette
+    - Do you have a demo?
+    - Cars
+    - please voulette
+    - Out of scope question.
+    - i need money
+    - i want play ball
+    - flight catch up
+    - how do you like your coffee
+    - Can you get analytics on who I'm chatting with when I use Rasa
+    - coronavirus
+    - have you heard of corona?
+    - where do i type in commandy
+    - where to type in commands
+    - you have to
+    - what type of bot?
+    - sfasd
+    - asdkjasdhjkasd
+    - j  bhbhj
+    - eshdtjfjfyk
+    - drhdtjfjfyj
+    - sudo reboot
+    - asdfgasd
+    - asdfgasdas

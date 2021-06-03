@@ -1,0 +1,27 @@
+version: "2.0"
+nlu:
+- intent: thank
+  examples: |
+    - thank you
+    - thanks
+    - thank you very much
+    - you are very helpful
+    - you are kind
+    - good job
+    - thanks a lot
+    - thankyou
+    - thank
+    - god bless
+    - gratefully
+    - Thank you so much
+    - Thanks bot
+    - Thanks for that
+    - cheers
+    - cheers bro
+    - ok thanks!
+    - perfect thank you
+    - thanks a bunch for everything
+    - thanks for the help
+    - amazing, thanks
+    - cool, thanks
+    - cool thank you
