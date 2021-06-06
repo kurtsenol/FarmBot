@@ -3,12 +3,12 @@ nlu:
 - intent: express_complaint
   examples: |
     - I would like to [complain](complain) about buyer
-    - want to [complain](complain) about a product
-    - I have a [problem](complain) with the product
-    - want to [complain](complain) about seller
-    - I'm [angry](complain) about the product
-    - I'm [angry](complain) about the seller
-    - there is a [problem](complain) with the product
-    - I'm [not satisfied](complain) with the product
-    - The product [isn't as I would expect](complain).
+    - want to [complain](complain) about a [product](product)
+    - I have a [problem](complain) with the [product](product)
+    - want to [complain](complain) about [seller](seller)
+    - I'm [angry](complain) with the [product](product)
+    - I'm [angry](complain) about the [seller](seller)
+    - there is a [problem](complain) with the [product](product)
+    - I'm [not satisfied](complain) with the [product](product)
+    - The [product](product) [isn't as I would expect](complain).
 

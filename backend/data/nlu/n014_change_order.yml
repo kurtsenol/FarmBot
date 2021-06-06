@@ -1,0 +1,19 @@
+version: "2.0"
+nlu:
+- intent: cancel_or_change_order
+  examples: |
+    - I would like to [change my order](change_order).
+    - want to [cancel my order](change_order).
+    - I want to [change order](change_order).
+    - want to [cancel order](change_order).
+    - [cancel my order](change_order)
+    - [change my order](change_order)
+    - want to [change my last order](change_order).
+    - I want to [cancel my last order](change_order).
+    - How can I [change my order](change_order)?
+    - How can I [cancel my order](change_order)?
+    - can I [change my order](change_order)?
+    - can I [cancel my order](change_order)?
+
+
+

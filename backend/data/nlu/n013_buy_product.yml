@@ -1,0 +1,16 @@
+version: "2.0"
+nlu:
+- intent: buy_product
+  examples: |
+    - I would like to [buy](buy) a [product](product).
+    - want to [buy](buy) [products](product).
+    - I want to [buy](buy) [avacado](product).
+    - want to [buy](buy) [apple](product).
+    - want to [buy](buy) [apricot](product).
+    - like to [buy](buy) [mushroom](product).
+    - like to [buy](buy) [fruits](product).
+    - like to [buy](buy) [vegetables](product).
+    - like to [buy](buy) [veggies](product).
+
+
+

@@ -29,11 +29,19 @@ intents:
     use_entities: true
 - express_complaint:
     use_entities: true
+- sell_product:
+    use_entities: true
+- buy_product:
+    use_entities: true
+- cancel_or_change_order:
+    use_entities: true
 entities:
 - complain
-- role
-- project_name
-- 1task_name
+- product
+- seller
+- sell
+- buy
+- change_order
 - PERSON
 slots:
   complaint:
@@ -103,6 +111,12 @@ responses:
     - payload: /deny
       title: No
     text: Do you submit your complaint with above description?
+  utter_sell_product:
+  - text: After becoming a registered user, you can sell your products by clicking "Start selling" button on the top of the home page.
+  utter_buy_product:
+  - text: You can find nearest sellers to you on the map.
+  utter_cancel_or_change_order:
+  - text: You can change/cancel your order on "Orders" section found on your account page.
 actions:
 - utter_get_started
 - utter_how_can_I_help
@@ -116,6 +130,9 @@ actions:
 - utter_ask_quit
 - action_create_complaint
 - action_slot_reset
+- utter_sell_product
+- utter_buy_product
+- utter_cancel_or_change_order
 forms:
   form_complaint:
     required_slots:

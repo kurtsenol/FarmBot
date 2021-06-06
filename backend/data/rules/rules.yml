@@ -28,4 +28,17 @@ rules:
   - intent: quit_form
   - action: utter_ask_quit
   
+- rule: respond to sell_product
+  steps:
+  - intent: sell_product
+  - action: utter_sell_product
 
+- rule: respond to buy_product
+  steps:
+  - intent: buy_product
+  - action: utter_buy_product
+
+- rule: respond to cancel_or_change_order
+  steps:
+  - intent: cancel_or_change_order
+  - action: utter_cancel_or_change_order

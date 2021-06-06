@@ -1,0 +1,19 @@
+version: "2.0"
+nlu:
+- intent: sell_product
+  examples: |
+    - I would like to [sell](sell) a [product](product).
+    - want to [sell](sell) my [products](product).
+    - I want to [sell](sell) my [tomatoes](product).
+    - want to [sell](sell) my [tomatoes](product).
+    - I want to be a [seller](seller).
+    - want to be a [seller](seller).
+    - like to be a [seller](seller).
+    - want to [sell](sell) my [cucumber](product).
+    - like to [sell](sell) my [pepper](product).
+    - like to [sell](sell) my [fruits](product).
+    - like to [sell](sell) my [vegetables](product).
+    - like to [sell](sell) my [veggies](product).
+
+
+
